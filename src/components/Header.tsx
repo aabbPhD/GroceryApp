@@ -28,14 +28,14 @@ function Header() {
                 <span className='logo'>Наш магазин</span>
                 <ToggleCategoriesButton />
                 <ProductsInput />
-                < >
+                <div className='header-actions'>
                     <BasketIcon />
-                   
-                </>
-                <>
+                    <span>Корзина</span>
+                </div>
+                <div className='header-actions'>
                     <LoginIcon />
-                
-                </>
+                    <span>Войти</span>
+                </div>
             </div> 
         </div>
     )
