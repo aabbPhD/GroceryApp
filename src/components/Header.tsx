@@ -1,4 +1,3 @@
-import React from 'react';
 import CategoryIcon from './svg-icons/categoryicon';
 import CrossIcon from './svg-icons/crossicon';
 import BasketIcon from './svg-icons/basketicon';
@@ -28,24 +27,7 @@ function Header() {
                 <span className='logo'>Наш магазин</span>
                 <ToggleCategoriesButton />
                 <ProductsInput />
-                < >
-                    <BasketIcon />
-                   
-                </>
-                <>
-                    <LoginIcon />
-                
-                </>
-            </div> 
-        </div>
-    )
-}
-
-export default Header
-
-
-/*
-<div className='header-actions'>
+                <div className='header-actions'>
                     <BasketIcon />
                     <span>Корзина</span>
                 </div>
@@ -53,4 +35,9 @@ export default Header
                     <LoginIcon />
                     <span>Войти</span>
                 </div>
-*/
+            </div> 
+        </div>
+    )
+}
+
+export default Header

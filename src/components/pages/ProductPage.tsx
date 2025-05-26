@@ -18,8 +18,9 @@ export default function ProductPage() {
     const [productData, setProductData] = React.useState<ProductType | undefined>(undefined);
 
     React.useEffect(() => {
-        if (products) {
-            const fetchedProductData = products?.find(item => item.id === Number(params.id) && item.category === categoriesEnToRu[params.category]);
+        if (products && params?.category) {
+            const paramCategory = params.category;
+            const fetchedProductData = products?.find(item => item.id === Number(params.id) && item.category === categoriesEnToRu[paramCategory]);
             setProductData(fetchedProductData);
         }      
     }, [products, params.id])

@@ -17,7 +17,7 @@ const useProductsStore = create<ProductsState>((set, get) => ({
     popularProducts: [],
 
     fetchProducts: async () => {
-        const response = await fetch('/products_db.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}/products_db.json`);
         const data = await response.json();
         if (data?.products?.length) {
             set({ products: data.products });

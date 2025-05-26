@@ -3,7 +3,7 @@ import './App.scss'
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import useProductsStore from './store/products.store';
-import type { CartItemType } from './types/types';
+//import type { CartItemType } from './types/types';
 import Layout from './components/Layout';
 import MainPage from './components/pages/MainPage';
 import ProductPage from './components/pages/ProductPage';

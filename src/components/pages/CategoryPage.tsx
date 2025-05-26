@@ -32,7 +32,10 @@ function CategoryPage() {
         if (!params?.category || !(params.category in categoriesEnToRu)) return [];
         if (params.category === 'new') return newProducts;
         else if (params.category === 'popular') return popularProducts;
-        else return products.filter(item => item.category === categoriesEnToRu[params.category]);
+        else {
+            const paramCategory = params.category;
+            return products.filter(item => item.category === categoriesEnToRu[paramCategory]);
+        }
     }
 
     return (
